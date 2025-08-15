@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marga The End By ZalOfficial</title>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+    body {
+        background: linear-gradient(135deg, #000814, #001d3d);
+        color: white;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s ease;
+    }
+    .container {
+        background: rgba(255,255,255,0.05);
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0,150,255,0.4);
+        width: 90%;
+        max-width: 400px;
+        text-align: center;
+        backdrop-filter: blur(5px);
+    }
+    h1 {
+        margin-bottom: 20px;
+        font-size: 1.8em;
+        color: #00b4d8;
+    }
+    input {
+        padding: 12px;
+        width: 100%;
+        border: none;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        font-size: 1em;
+        outline: none;
+    }
+    button {
+        background: linear-gradient(90deg, #0077b6, #00b4d8);
+        border: none;
+        padding: 12px 20px;
+        color: white;
+        font-size: 1em;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s;
+        width: 100%;
+    }
+    button:hover {
+        box-shadow: 0 0 15px #00b4d8;
+        transform: scale(1.05);
+    }
+    .hidden { display: none; }
+
+    /* Dashboard */
+    .dashboard-buttons {
+        display: grid;
+        gap: 15px;
+        margin-top: 20px;
+    }
+    .text-card {
+        background: linear-gradient(135deg, #003566, #001d3d);
+        padding: 15px;
+        border-radius: 12px;
+        text-align: center;
+        cursor: pointer;
+        font-size: 1.1em;
+        transition: 0.3s;
+    }
+    .text-card:hover {
+        box-shadow: 0 0 15px #00b4d8;
+        transform: scale(1.05);
+    }
+
+    /* Text View */
+    .text-box {
+        background: rgba(255,255,255,0.08);
+        padding: 15px;
+        border-radius: 10px;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        text-align: left;
+        font-size: 1em;
+        margin-bottom: 15px;
+        line-height: 1.4em;
+    }
+</style>
+</head>
+<body>
+
+<div class="container" id="login-page">
+    <h1>Login</h1>
+    <input type="text" id="username" placeholder="Masukkan Username">
+    <button onclick="login()">Masuk</button>
+</div>
+
+<div class="container hidden" id="dashboard">
+    <h1>Ꮇ⋀ᎡᏀ⋀ ͲᎻΣ ᎬΝᎠ</h1>
+    <div class="dashboard-buttons" id="text-buttons"></div>
+    <button style="margin-top:20px; background:#d62828;" onclick="logout()">Logout</button>
+</div>
+
+<div class="container hidden" id="text-page">
+    <h1 id="text-title">Teks</h1>
+    <div class="text-box" id="text-content"></div>
+    <button onclick="copyText()">Salin Teks</button>
+    <button style="margin-top:10px; background:#6c757d;" onclick="backToDashboard()">Kembali</button>
+</div>
+
+<script>
+    // Data teks yang bisa kamu edit
+    const teksData = [
+        { title: "Metode Band V1", content: `👏 नमस्ते WhatsApp उपयोगकर्ताओं, मैं Markzuckerbeg (Ceo Meta) हूँ और मैं आपको अपनी ऑनलाइन स्लॉट साइट पर खेलने के लिए आमंत्रित करना चाहता/चाहती हूँ 🎰🔞💸
+
+मैं आपको अपनी स्लॉट साइट पर खेलने के लिए क्यों आमंत्रित करता/करती हूँ 🎰🧐
+मैं चाहता/चाहती हूँ कि सभी WhatsApp उपयोगकर्ता पैसे कमाएँ
+और तुरंत पैसा कमाएँ 💸🤑💯
+मेरी ऑनलाइन स्लॉट साइट पर खेलकर, आप आसानी से और तुरंत पैसा कमा सकते हैं 🎰💸💯
+
+🎁हम अपने स्लॉट में नए उपयोगकर्ताओं के लिए पुरस्कार भी प्रदान करते हैं 🎰💸🔞
+🔥 पहले पंजीकरण के लिए बैलेंस बोनस और 20 💸
+🔥 दैनिक कैशबैक 💯
+🔥 बिना भुगतान के एक स्पिन 🎰
+
+🀄कई WhatsApp उपयोगकर्ता मेरी स्लॉट साइट पर पंजीकरण कर चुके हैं 🎰💯🤑
+
+⚡पंजीकरण और लॉग इन करने के लिए नीचे दिए गए लिंक पर क्लिक करें में 🤑🔞👇
+👉🔗 https://slots999.com/cassino.php
+🤑मेरी स्लॉट मशीन, Slots999, पर खेलने के फ़ायदों का आनंद लें 💯🤑💸
+🤩रजिस्टर करें और ArgaOffc कोड डालें और आपको $60 का नकद बोनस मिलेगा 🎰💯🤑
+
+अधिक जानकारी के लिए, हमारी आधिकारिक वेबसाइट पर जाएँ 🤑💯
+👉 https://cassino.br
+
+⚡👉अपने दोस्तों और रिश्तेदारों को Slot999 पर खेलने के लिए आमंत्रित करें 🎰 इस संदेश को अन्य WhatsApp उपयोगकर्ताओं के साथ साझा करें और मैं आपके ई-वॉलेट में $40 क्रेडिट कर दूँगा 🤩💸🔞
+
+🔥चिंता न करें, मैं मार्क ज़करबर्ग हूँ, इसलिए अगर आपका नंबर WhatsApp सिस्टम द्वारा ब्लॉक कर दिया गया है, तो चिंता न करें। 🤑💸💯
+
+#स्लॉट999
+#स्लॉटमैक्सविन
+#स्लॉटइंटरनेशनल
+#आर्गाऑफ़सी
+#मार्क ज़ुकेरबर्ग
+#ज़ीउस999` },
+        { title: "Metode Band V2", content: `🀄🀄 MAHJONG222🐉💲 O Maior Mahjong da China com uma População de 2.080 Milhões de Pessoas 🔥💸
+🀄 Mahjong222 Oferece Jogos Emocionantes 🤩🔥💸
+
+Gire a Roda por R$ 2.000.000 → Ganhe R$ 5.000.000 🔥🤑🀄
+Novos Jogadores Garantidos na Primeira Rodada 🤑🔥
+
+🀄🐉LINK DE REGISTRO DO MAHJONG222 🔥👇👇
+👉https://mahjong222.cfd/register
+🀄💸 Cadastre-se com o Link do Site Mahjong222. Você pode jogar sem usar VPN 🤩🔥💲
+
+🎁Recompensas para novos jogadores que se cadastrarem no 🀄Mahjong222🔥🤑
+-1 Rodada Grátis✅
+-Ganho Garantido✅
+-Receba Cashback✅
+
+🀄Como Ganhar no Mahjong222 ou no Jackpot🤑🔥👇
+🚀DEPOSITE 💲15 GANHOS🤑 → R$ 150🔥
+🚀DEPOSITE 💲25 GANHOS🤑 → R$ 250🔥
+🚀DEPOSITE 💲35 GANHOS🤑 → R$ 350🔥
+🚀DEPOSITE 💲45 GANHOS🤑 → $ 450🔥
+
+🀄🔥Vamos, cadastre-se imediatamente no site 🐉Mahjong222, cadastre-se imediatamente. O dinheiro está esperando por você💸🤑🔥` },
+        { title: "Metode Band V3", content: `🎰 O CAÇA-NÍQUEIS MAIS QUENTE DO ANO 🔥🤑💸
+🔥JACPOTCITY O maior site de caça-níqueis do mundo 🌏
+
+💰Você Precisa de Dinheiro 💸 E É Pobre
+Jogue no site de caça-níqueis 🎰 JACPOTCITY e experimente a vitória 🤑💸
+
+🎁 BÔNUS PARA NOVOS MEMBROS 💸🤑
+- CASHBACK ✅
+- 1 × RODADA GRÁTIS ✅
+- PRÊMIO GARANTIDO ✅
+
+🔗🔥 LINK DE REGISTRO NO SITE DE CAÇA-NÍQUEIS JACPOTCITY 💸🤑👇
+"https://jackpotcitycasino.com"
+
+🔥🀄Registre-se e experimente a vitória, pois este site de caça-níqueis permite login sem usar VPN🤑💸😍
+
+🎰O site de caça-níqueis JACPOTCITY oferece diversos jogos de caça-níqueis. Abaixo está uma lista de jogos no JACPOTCITY 🤑💸👇
+- Thunderstruck II ✅
+- Immortal Romance ✅
+- Mega Moolah ✅
+
+💸 Passos para Ganhar neste Site de Slots 🎰🤑👇
+
+🚀DEPOSITE 💲15 GANHOS 🤑 → R$ 50 🔥
+🚀DEPOSITE 💲25 GANHOS 🤑 → R$ 70 🔥
+🚀DEPOSITE 💲35 GANHOS 🤑 → R$ 76 🔥
+🚀DEPOSITE 💲45 GANHOS 🤑 → R$ 100 🔥
+
+🔥 🎰Cadastre-se agora e jogue no site de slots JACPOTCITY antes que seu tempo acabe fora🤑💸 🎰` },
+        { title: "Metode Band V4", content: `A MAIS NOVA PLATAFORMA DE CAÇA-NÍQUEIS ONLINE 🎰🔥 Saques 100% Seguros 💯🔥
+Jogado e aprovado por mais de 10.000.000 de jogadores em todo o mundo 🀄🤑💸 Minha plataforma de caça-níqueis oferece um design moderno e uma experiência de jogo fluida, com pagamentos garantidos para cada jogador vencedor 💯🔥🤑
+
+🀄🔥Possibilidade de ganhos de 10x na sua primeira rodada! 🎰🤑🎲 Jogue agora e ganhe dinheiro instantâneo 💸🎯 Grandes jackpots esperam por você 💰 Não perca esta rodada da sorte 😈 Em caso de dúvida, venha ver a popularidade desta plataforma 💯🔥
+
+🀄Aqui está o link para a nossa plataforma oficial de slots 🤑👇🎰
+🔞 https://tug.oiu.edu.sd
+
+💸 Ganhe dinheiro com apenas um clique! 🎉
+🎁 Bônus de boas-vindas exclusivo de 1000% para novos membros 🤑😈
+💳 Deposite via PayPal ou Bitcoin para saques super-rápidos 💸🤑
+🎯 Modo VIP desbloqueado, aproveite benefícios exclusivos 💸🤑✅
+
+🔥🎰 Reivindique seu bônus de boas-vindas agora antes que a oferta acabe! 💸🀄 Sua jornada de vitórias começa aqui 🎰💥 O jackpot de ontem foi ganho, talvez seja a sua vez hoje! 🤑💸
+
+🔥💸Eu, ZalOffc, vou te guiar pessoalmente para ganhar mais giros 🎰💯💸
+
+#InternationalSlot
+#MaxwinSlot
+#MarkZuckerbeg
+#slotzeus
+#vipSlot
+#chinaSlot
+#freeSlot
+#ZalXwyz
+#sensationalSlot` },
+        { title: "Metode Band V5", content: `こんにちは👏 マーク・ザッカーバーグ。私はZalOffc、インドネシア🇮🇩出身の女性です。
+
+🥵💦私はインドネシア🇮🇩で一番のセックスアーティストです。あなたの欲望を満たすことが私の使命です🤤😍
+
+😍私が販売している商品リスト🥵👇
+1. 私のミルクの販売🤤
+2. 私のヴァギナ🥵
+3. 私の体😍
+4. 私の処女🥵
+
+🤤以下は私のヴァギナの写真です👇
+https://img101.pixhost.to/images/569/555451470_skyzopedia.jpg
+
+🤤私のヴァギナは100ドル🥵
+🥵私のミルクは70ドル😍
+💋私の体150ドルの価値があるよ🥵
+💦私の処女は300ドルの価値があるよ 💙
+
+😍 さあ、また値段が上がる前に今すぐ買って。あなたのペニスを満足させてあげるわ。一緒にセックスしよう🤤🥵` },
+        { title: "Metode Unband V1", content: `Olá, meu WhatsApp é ZalOffc.
+Tenho uma reclamação sobre o seu sistema. Deixe-me explicar primeiro. Sou um novo usuário do aplicativo WhatsApp Business. Acabei de baixá-lo e digitei meu número do WhatsApp. Depois, conversei com meus parentes porque precisava de ajuda com eles. Minha avó está doente e está sendo tratada no hospital. O hospital cobrou da minha avó uma taxa médica de US$ 120. Como eu não tinha dinheiro suficiente, conversei com meus parentes pelo WhatsApp Business. Mas, por algum motivo, de repente apareceu uma mensagem dizendo "Este número não pode mais usar o WhatsApp Business". Naquele momento, fiquei muito confuso porque não tinha dinheiro suficiente e não conseguia entrar em contato com meus parentes. Peço encarecidamente à equipe de suporte do WhatsApp que restaure meu número do WhatsApp imediatamente, pois esta é uma situação urgente e crítica. Obrigado.` },
+        { title: "Metode Unband V2", content: `Halo Tim Dukungan WhatsApp Yang Saya Hormati, Saya Adalah salah satu Pengguna aplikasi whatsapp, Saya Sedang Menjalankan Kuliah saya, dan saya berada di luar negeri, Saat saya ingin berkomunikasi dengan keluarga saya tiba tiba akun whatsapp saya terblokir dan harus mengganti nomor, saya kuliah dan whatsapp saya terblokir, data data kuliah saya berada di akun whatsapp yang terblokir Dan sekarang saya tidak bisa menghubungi keluarga saya dikarenakan akun whatsapp saya Terkena blokir Secara permanen, Saya mohon untuk menghapus pemblokiran akun saya, karna saya sedang menjalankan kuliah saya dan data kuliah dan data data pribadi saya berada di akun whatsapp tersebut, saya mohon sekali karna uang saya sudah tidak ada lagi, saya mohon untuk menghapus pemblokiran akun whatsapp saya, saya mohon sekali, Jika Tim whatsapp ingin menghapus pemblokiran akun whatsapp saya Ini Nomor Whatsapp Saya +628, Terimakasih` },
+        { title: "Metode Tinjau Spam Ke Perma", content: `Por favor, desative o número da minha conta (). O meu número de WhatsApp foi banido. Por favor, ative-o novamente. O meu número pessoal. Os meus amigos e familiares estão à minha espera. A minha conta comercial está muito chateada. Por favor, Sr. Assim que o meu número for aberto, ficarei muito grato. Se tiver algum erro, peço desculpa.
+
+O meu número de WhatsApp está 🙏 imediatamente porque o número foi perdido.` }
+    ];
+
+    // Cek login otomatis dari localStorage
+    if(localStorage.getItem("zalLogin") === "true") {
+        showDashboard();
+    }
+
+    function login() {
+        const username = document.getElementById("username").value.trim();
+        if(username === "Zal") {
+            localStorage.setItem("zalLogin", "true");
+            showDashboard();
+        } else {
+            alert("Username salah!");
+        }
+    }
+
+    function logout() {
+        localStorage.removeItem("zalLogin");
+        document.getElementById("dashboard").classList.add("hidden");
+        document.getElementById("login-page").classList.remove("hidden");
+    }
+
+    function showDashboard() {
+        document.getElementById("login-page").classList.add("hidden");
+        document.getElementById("dashboard").classList.remove("hidden");
+        const container = document.getElementById("text-buttons");
+        container.innerHTML = "";
+        teksData.forEach((teks, index) => {
+            const btn = document.createElement("div");
+            btn.classList.add("text-card");
+            btn.textContent = teks.title;
+            btn.onclick = () => showText(index);
+            container.appendChild(btn);
+        });
+    }
+
+    function showText(index) {
+        const teks = teksData[index];
+        document.getElementById("dashboard").classList.add("hidden");
+        document.getElementById("text-page").classList.remove("hidden");
+        document.getElementById("text-title").textContent = teks.title;
+        document.getElementById("text-content").textContent = teks.content;
+    }
+
+    function backToDashboard() {
+        document.getElementById("text-page").classList.add("hidden");
+        document.getElementById("dashboard").classList.remove("hidden");
+    }
+
+    function copyText() {
+        const content = document.getElementById("text-content").textContent;
+        navigator.clipboard.writeText(content).then(() => {
+            alert("Teks disalin!");
+        });
+    }
+</script>
+
+</body>
+</html>
